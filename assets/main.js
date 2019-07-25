@@ -4,6 +4,7 @@ import Meta from "vue-meta";
 import App from "./App.vue";
 import Container from "./pages/Container.vue";
 import Index from "./pages/Index.vue";
+import "@github/time-elements";
 
 Vue.use(VueRouter);
 Vue.use(Meta);

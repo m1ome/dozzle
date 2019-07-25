@@ -14,7 +14,10 @@
 
     <ul class="events">
       <li v-for="item in filtered" class="event" :key="item.key">
-        <span class="date">{{ item.dateRelative }}</span> <span class="text" v-html="colorize(item.message)"></span>
+        <relative-time :datetime="item.date" class="date">
+          {{ item.date }}
+        </relative-time>
+        <span class="text" v-html="colorize(item.message)"></span>
       </li>
     </ul>
     <scrollbar-notification :messages="messages"></scrollbar-notification>
